@@ -19,19 +19,16 @@ export default function Navbar() {
           {/* Logo and brand */}
           <div className="flex items-center gap-2 md:gap-3">
             <Image
-              src="/file.svg"
+              src="/img/logo.png"
               alt="Logo"
-              width={32}
-              height={32}
-              className="w-8 h-8 md:w-9 md:h-9"
+              width={150}
+              height={150}
+              className=" h-5 w-auto md:h-7"
             />
-            <span className="text-white text-lg md:text-xl font-bold">
-              Reply <span className="text-[#7ED957]">system</span>
-            </span>
           </div>
           
           {/* Center nav links - hidden on mobile */}
-          <div className="hidden md:flex gap-8 ml-8">
+          <div className="hidden lg:flex gap-8 ml-8">
             {navLinks.map((item) => (
               <a
                 key={item.name}
@@ -45,7 +42,7 @@ export default function Navbar() {
           </div>
           
           {/* Right buttons - hidden on mobile */}
-          <div className="hidden md:flex gap-3">
+          <div className="hidden lg:flex gap-3">
             <button className="bg-white text-[#05444B] font-semibold px-5 py-2 rounded-md hover:bg-gray-100 shadow flex items-center gap-2 text-base transition-colors">
               Try It Free <span className="text-lg">→</span>
             </button>
@@ -56,7 +53,7 @@ export default function Navbar() {
           
           {/* Hamburger for mobile */}
           <button
-            className="md:hidden flex flex-col justify-center items-center w-8 h-8 ml-2 focus:outline-none"
+            className="lg:hidden flex flex-col justify-center items-center w-8 h-8 ml-2 focus:outline-none"
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Toggle navigation menu"
           >

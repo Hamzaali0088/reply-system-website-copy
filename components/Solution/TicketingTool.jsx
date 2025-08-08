@@ -36,10 +36,10 @@ export default function TicketingTool() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <p className="text-sm font-semibold text-green-600 uppercase tracking-wide mb-2">
+          <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">
             AGENT TICKETING TOOLS
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-text-primary mb-8">
             Drive 61% faster reply times with better agent tools
           </h1>
         </div>
@@ -81,20 +81,20 @@ export default function TicketingTool() {
                   onClick={() => setSelectedFeature(index)}
                   className={`w-full p-6 text-left transition-all duration-300 ${
                     selectedFeature === index 
-                      ? 'bg-green-50 border-green-200' 
+                      ? 'bg-primary-lightest border-primary-light' 
                       : 'bg-white hover:bg-gray-50'
                   }`}
                 >
                   <div className="flex items-center justify-between">
                     <h3 className={`text-lg font-semibold ${
-                      selectedFeature === index ? 'text-green-700' : 'text-gray-900'
+                      selectedFeature === index ? 'text-secondary' : 'text-text-primary'
                     }`}>
                       {feature.title}
                     </h3>
                     <svg 
                       className={`w-5 h-5 transition-transform duration-300 ${
                         selectedFeature === index 
-                          ? 'text-green-600 rotate-180' 
+                          ? 'text-primary rotate-180' 
                           : 'text-gray-400'
                       }`} 
                       fill="none" 

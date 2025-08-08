@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CheckIcon = () => (
-  <span className="ml-auto flex items-center justify-center w-6 h-6 rounded-full bg-[#7ED957]">
+          <span className="ml-auto flex items-center justify-center w-6 h-6 rounded-full bg-primary">
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 8.5L7 11.5L12 5.5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
   </span>
 );
@@ -32,22 +32,22 @@ const cards = [
     subtitle: 'All support Apps',
     content: (
       <ul className="space-y-3 mt-6">
-        <li className="flex items-center gap-3 text-base font-medium text-[#232B3A]">
+        <li className="flex items-center gap-3 text-base font-medium text-text-primary">
           <img src="/img/app1.png" alt="App1" className="w-6 h-6" />
           <span>Testing near you</span>
           <CheckIcon />
         </li>
-        <li className="flex items-center gap-3 text-base font-medium text-[#232B3A]">
+        <li className="flex items-center gap-3 text-base font-medium text-text-primary">
           <img src="/img/app2.png" alt="App2" className="w-6 h-6" />
           <span>LogicCRM</span>
           <CheckIcon />
         </li>
-        <li className="flex items-center gap-3 text-base font-medium text-[#232B3A]">
+        <li className="flex items-center gap-3 text-base font-medium text-text-primary">
           <img src="/img/app3.png" alt="App3" className="w-6 h-6" />
           <span>VattiTech</span>
           <CheckIcon />
         </li>
-        <li className="flex items-center gap-3 text-base font-medium text-[#232B3A]">
+        <li className="flex items-center gap-3 text-base font-medium text-text-primary">
           <img src="/img/app4.png" alt="App4" className="w-6 h-6" />
           <span>One4CRM</span>
           <CheckIcon />
@@ -77,10 +77,10 @@ export default function Features() {
         {cards.map((card, idx) => (
           <div
             key={idx}
-            className="bg-[#F7F8FA] rounded-2xl shadow-lg flex flex-col h-full overflow-hidden border border-[#F0F0F0] p-3 "
+            className="bg-bg-lighter rounded-2xl shadow-lg flex flex-col h-full overflow-hidden border border-bg-lightest p-3 "
           >
             {/* Browser-like top bar */}
-            <div className="bg-[#0B3C3B] h-7 rounded-t-2xl flex items-center px-4">
+            <div className="bg-secondary-darker h-7 rounded-t-2xl flex items-center px-4">
               <div className="flex space-x-1">
                 <span className="w-2 h-2 bg-gray-300 rounded-full inline-block"></span>
                 <span className="w-2 h-2 bg-gray-300 rounded-full inline-block"></span>
@@ -90,16 +90,16 @@ export default function Features() {
             {/* Main content */}
             <div className="flex-1 bg-white flex flex-col px-6 pt-6 pb-2">
               <div className="text-xs text-gray-500 font-semibold mb-1">{card.title}</div>
-              <div className="text-xl font-bold mb-2 text-[#232B3A]">{card.subtitle}</div>
+              <div className="text-xl font-bold mb-2 text-text-primary">{card.subtitle}</div>
               {card.content}
             </div>
             {/* Description */}
-            <div className="px-6 py-4 text-[#232B3A] text-base font-medium text-left">
+            <div className="px-6 py-4 text-text-primary text-base font-medium text-left">
               {card.description}
             </div>
             {/* Button */}
             <div className="px-6 pb-6 mt-auto">
-              <button className="bg-[#7ED957] text-[#05444B] font-bold px-6 py-2 rounded-lg  hover:bg-[#6bc24b] transition-colors">
+              <button className="bg-primary text-secondary font-bold px-6 py-2 rounded-lg  hover:bg-primary-hover transition-colors">
                 Try It Free <span className=" ml-1 text-lg">→</span>
               </button>
             </div>

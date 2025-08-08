@@ -8,10 +8,10 @@ export default function PricingHeader() {
           {/* Left side - Customer Service Suite */}
           <div className="space-y-6">
             <div className="space-y-4">
-              <h3 className="text-sm font-bold text-[#05444B] uppercase tracking-wide">
+              <h3 className="text-sm font-bold text-secondary uppercase tracking-wide">
                 Plans and Pricing
               </h3>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#05444B] leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight">
                 Customer Service Suite Plans
               </h1>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -26,16 +26,16 @@ export default function PricingHeader() {
           {/* Right side - Employee Service Suite */}
           <div className="space-y-4">
             <div className="flex items-center   gap-3 mb-4">
-              <h2 className="text-xl font-bold text-[#05444B] uppercase tracking-wide">
+              <h2 className="text-xl font-bold text-secondary uppercase tracking-wide">
                 Employee Service Suite
               </h2>
-              <span className="bg-[#7ED957] text-white px-3 py-1 rounded text-sm font-bold">
+              <span className="bg-primary text-white px-3 py-1 rounded text-sm font-bold">
                 NEW
               </span>
             </div>
             <a
               href="#"
-              className="inline-flex items-center gap-2 text-[#05444B] font-semibold hover:text-[#7ED957] transition-colors border-b border-[#05444B] pb-1 hover:border-[#7ED957]"
+              className="inline-flex items-center gap-2 text-secondary font-semibold hover:text-primary transition-colors border-b border-secondary pb-1 hover:border-primary"
             >
               See plans and pricing
               <svg

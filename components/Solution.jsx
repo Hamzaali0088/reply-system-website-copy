@@ -4,11 +4,11 @@ export default function Solution() {
   return (
     <section className="bg-white py-20 mt-24  px-4 flex flex-col items-center">
       {/* Title */}
-      <h2 className="text-4xl md:text-5xl font-bold text-center text-[#232B3A] mb-4">Solution</h2>
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-text-primary mb-4">Solution</h2>
       {/* Subtitle */}
-      <p className="text-center text-[#3A4657] text-lg md:text-xl mb-12 max-w-2xl">
+      <p className="text-center text-text-secondary text-lg md:text-xl mb-12 max-w-2xl">
         We’re not just another ticketing platform. We’re your <br />
-        <span className="font-bold text-[#3A4657]">managed customer support partner.</span>
+        <span className="font-bold text-text-secondary">managed customer support partner.</span>
       </p>
       {/* Main content grid */}
       <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
@@ -37,8 +37,8 @@ export default function Solution() {
             },
           ].map((item, idx) => (
             <div key={idx} className="flex items-start gap-3 bg-white border border-gray-100 rounded-lg p-4 shadow-sm">
-              <div className="w-4 h-4 mt-1 rounded-sm bg-[#7ED957] flex-shrink-0"></div>
-              <div className="text-[#232B3A] text-base md:text-lg">
+              <div className="w-4 h-4 mt-1 rounded-sm bg-primary flex-shrink-0"></div>
+              <div className="text-text-primary text-base md:text-lg">
                 <span className="font-bold">
                   {item.bold}
                 </span>
@@ -65,7 +65,7 @@ export default function Solution() {
               className="rounded-2xl shadow-xl w-full max-w-md h-56 md:h-100 md:w-full mb-6"
             />
           </div>
-          <div className="text-center text-[#232B3A] text-sm md:text-base max-w-md mt-2">
+          <div className="text-center text-text-primary text-sm md:text-base max-w-md mt-2">
             <span className="italic">
               Whether you’re running a SaaS product, an eCommerce brand, or a service business, we mold the support system around your customers and your operations — not the other way around.
             </span>

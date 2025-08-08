@@ -6,11 +6,11 @@ export default function News() {
     <section className="py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* News Banner */}
-        <div className="bg-[#05444B] rounded-2xl p-8 mb-16 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="bg-secondary rounded-2xl p-8 mb-16 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="text-white">
             <h3 className="text-2xl md:text-3xl font-bold">We're in the news sometimes.</h3>
           </div>
-          <button className="bg-[#7ED957] text-[#05444B] font-semibold px-6 py-3 rounded-lg hover:bg-[#6bc24b] transition-colors text-lg shadow-lg hover:shadow-xl whitespace-nowrap">
+                      <button className="bg-primary text-secondary font-semibold px-6 py-3 rounded-lg hover:bg-primary-hover transition-colors text-lg shadow-lg hover:shadow-xl whitespace-nowrap">
             Check out our newsroom
           </button>
         </div>
@@ -19,8 +19,8 @@ export default function News() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#05444B] leading-tight">
-              This is a <span className="text-[#7ED957]">Reply System</span>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary leading-tight">
+          This is a <span className="text-primary">Reply System</span>
             </h2>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>

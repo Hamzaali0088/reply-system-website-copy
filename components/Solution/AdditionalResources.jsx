@@ -43,13 +43,13 @@ export default function AdditionalResources() {
   ]
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-bg-light">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl font-bold text-text-primary mb-4">
             Additional Resources
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
             Explore our comprehensive collection of resources to help you get the most out of our platform.
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function AdditionalResources() {
           {data.map((item, index) => {
             const IconComponent = item.icon;
             return (
-              <div key={index} className="bg-gray-50 min-w-[25%] h-full rounded-lg  overflow-hidden  transition-shadow duration-300">
+              <div key={index} className="bg-bg-light min-w-[25%] h-full rounded-lg  overflow-hidden  transition-shadow duration-300">
                 <div className='px-5 h-full'>
                   <div className="relative h-48 rounded-t-2xl overflow-hidden">
                     <Image
@@ -71,14 +71,14 @@ export default function AdditionalResources() {
                     <div className="absolute inset-0 bg-opacity-40 flex items-center justify-center">
                     </div>
                   </div>
-                  <div className="p-6 bg-gray-100 h-full min-h-[150px] rounded-b-2xl">
+                  <div className="p-6 bg-bg-lighter h-full min-h-[150px] rounded-b-2xl">
                     <div className='flex items-center gap-2 mb-2'>
-                      <IconComponent className="w-4 h-4 text-gray-600" />
-                      <span className="text-xs font-medium text-gray-500 uppercase tracking-wide">
+                      <IconComponent className="w-4 h-4 text-text-secondary" />
+                      <span className="text-xs font-medium text-text-muted uppercase tracking-wide">
                         {item.label}
                       </span>
                     </div>
-                    <h3 className="text-base font-semibold text-gray-900 mb-2">
+                    <h3 className="text-base font-semibold text-text-primary mb-2">
                       {item.title}
                     </h3>
                   </div>

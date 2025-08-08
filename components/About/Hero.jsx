@@ -15,8 +15,8 @@ export default function AboutHero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Text content */}
           <div className="space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#05444B] leading-tight">
-              This is <span className="text-[#7ED957]">Reply System</span>
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary leading-tight">
+        This is <span className="text-primary">Reply System</span>
             </h1>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>

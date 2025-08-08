@@ -41,12 +41,12 @@ export default function HowItWork() {
   return (
     <section className="bg-white py-24 px-4 flex flex-col items-center">
       {/* Title & Subtitle */}
-      <h2 className="text-5xl font-bold text-center text-[#232B3A] mb-2">How It work</h2>
-      <p className="text-center text-[#3A4657] text-lg mb-14">We are fully support on Reply System</p>
+      <h2 className="text-5xl font-bold text-center text-text-primary mb-2">How It work</h2>
+      <p className="text-center text-text-secondary text-lg mb-14">We are fully support on Reply System</p>
       {/* Main content grid */}
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
         {/* Left: Steps */}
-        <div className="flex flex-col gap-8 bg-[#A7E770] p-6 rounded-[32px]">
+        <div className="flex flex-col gap-8 bg-primary-light p-6 rounded-[32px]">
           {steps.map((step, idx) => (
             <div
               key={idx}
@@ -56,19 +56,19 @@ export default function HowItWork() {
                 boxShadow: '0 2px 12px 0 rgba(126,217,87,0.08)'
               }}
             >
-              <div className="font-bold text-[#232B3A] text-lg mb-1 leading-tight">{step.title}</div>
-              <div className="text-[#232B3A] text-base leading-snug opacity-90">{step.desc}</div>
+              <div className="font-bold text-text-primary text-lg mb-1 leading-tight">{step.title}</div>
+              <div className="text-text-primary text-base leading-snug opacity-90">{step.desc}</div>
             </div>
           ))}
         </div>
         {/* Right: Dedicated support card */}
-        <div className="bg-[#0B6A6A] rounded-[32px] px-10 py-24 flex flex-col items-center relative overflow-hidden min-h-[480px] w-full">
+        <div className="bg-secondary-darkest rounded-[32px] px-10 py-24 flex flex-col items-center relative overflow-hidden min-h-[480px] w-full">
           <div className="text-3xl font-bold text-white mb-6 text-center">Dedicated customer support</div>
           <div className="text-white text-lg text-center mb-10 max-w-md">
             A member of our support team will review your ticket and respond within [X] hours. If you need to add more details or files, simply reply to this message and it will be attached to your ticket.
           </div>
           <div className="flex justify-center w-full mb-12">
-            <button className="bg-[#7ED957] text-[#05444B] font-bold px-7 py-2 rounded-md shadow-md hover:bg-[#6bc24b] transition-colors">Try It Free →</button>
+            <button className="bg-primary text-secondary font-bold px-7 py-2 rounded-md shadow-md hover:bg-primary-hover transition-colors">Try It Free →</button>
           </div>
           {/* Mesh SVG and avatars */}
           <div className=" bottom-0 left-0 w-full flex flex-col items-center my-6  ">

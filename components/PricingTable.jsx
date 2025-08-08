@@ -25,7 +25,7 @@ export default function PricingTable() {
       ],
       isPopular: false,
       isEnterprise: false,
-      ctaStyle: "bg-[#7ED957] text-[#05444B] hover:bg-[#6bc24b]",
+      ctaStyle: "bg-primary text-secondary hover:bg-primary-hover",
       priceSuffix: "per agent/month billed monthly"
     },
     {
@@ -47,7 +47,7 @@ export default function PricingTable() {
       ],
       isPopular: false,
       isEnterprise: false,
-      ctaStyle: "bg-[#7ED957] text-[#05444B] hover:bg-[#6bc24b]",
+      ctaStyle: "bg-primary text-secondary hover:bg-primary-hover",
       priceSuffix: "per agent/month billed monthly"
     },
     {
@@ -72,7 +72,7 @@ export default function PricingTable() {
       ],
       isPopular: true,
       isEnterprise: false,
-      ctaStyle: "bg-[#7ED957] text-[#05444B] hover:bg-[#6bc24b]",
+      ctaStyle: "bg-primary text-secondary hover:bg-primary-hover",
       priceSuffix: "per agent/month billed monthly"
     },
     {
@@ -95,7 +95,7 @@ export default function PricingTable() {
       ],
       isPopular: false,
       isEnterprise: true,
-      ctaStyle: "bg-[#05444B] text-white hover:bg-[#073C43]",
+      ctaStyle: "bg-secondary text-white hover:bg-secondary-dark",
       priceSuffix: "Speak with our experts to customize a solution that fits your needs."
     }
   ];
@@ -107,7 +107,7 @@ export default function PricingTable() {
         <div className="flex items-center justify-end gap-4 mb-8">
           <span className={`font-semibold ${billing === "monthly" ? "text-black" : "text-gray-400"}`}>Monthly</span>
           <button
-            className={`relative w-12 h-6 rounded-full bg-gray-300 focus:outline-none transition-colors duration-200 ${billing === "annual" ? "bg-[#7ED957]" : ""}`}
+            className={`relative w-12 h-6 rounded-full bg-gray-300 focus:outline-none transition-colors duration-200 ${billing === "annual" ? "bg-primary" : ""}`}
             onClick={() => setBilling(billing === "monthly" ? "annual" : "monthly")}
             aria-label="Toggle billing period"
           >

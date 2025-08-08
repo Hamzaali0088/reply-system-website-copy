@@ -55,56 +55,26 @@ export default function FAQs() {
   };
 
   return (
-    <div style={{ display: "flex", maxWidth: 1200, margin: "0 auto", padding: "60px 20px", gap: "60px" }}>
-      <div style={{ flex: 1 }}>
-        <h1 style={{ 
-          fontSize: "3rem", 
-          fontWeight: 700, 
-          marginBottom: 0,
-          lineHeight: "1.2",
-          color: "#1a1a1a"
-        }}>
+    <div className="flex max-w-7xl mx-auto py-16 px-5 gap-16">
+      <div className="flex-1">
+        <h1 className="text-5xl font-bold mb-0 leading-tight text-text-primary">
           Frequently asked<br />questions
         </h1>
       </div>
-      <div style={{ flex: 2 }}>
+      <div className="flex-2">
         {faqs.map((faq, idx) => (
-          <div key={idx} style={{ borderBottom: "1px solid #e5e5e5" }}>
+          <div key={idx} className="border-b border-border">
             <button
               onClick={() => handleToggle(idx)}
-              style={{
-                width: "100%",
-                textAlign: "left",
-                background: "none",
-                border: "none",
-                padding: "24px 0",
-                fontSize: "1.1rem",
-                fontWeight: 600,
-                cursor: "pointer",
-                outline: "none",
-                color: "#1a1a1a",
-                transition: "color 0.2s ease"
-              }}
-              onMouseEnter={(e) => e.target.style.color = "#007bff"}
-              onMouseLeave={(e) => e.target.style.color = "#1a1a1a"}
+              className="w-full text-left bg-transparent border-none py-6 text-lg font-semibold cursor-pointer outline-none text-text-primary hover:text-accent-blue transition-colors duration-200"
             >
               {faq.question}
-              <span style={{ 
-                float: "right", 
-                fontSize: "0.9rem",
-                transition: "transform 0.2s ease"
-              }}>
+              <span className="float-right text-sm transition-transform duration-200">
                 {openIndex === idx ? "▲" : "▼"}
               </span>
             </button>
             {openIndex === idx && (
-              <div style={{ 
-                padding: "0 0 24px 0", 
-                color: "#666", 
-                fontSize: "1rem",
-                lineHeight: "1.6",
-                animation: "fadeIn 0.3s ease"
-              }}>
+              <div className="pb-6 text-gray-600 text-base leading-relaxed animate-fade-in">
                 {faq.answer}
               </div>
             )}

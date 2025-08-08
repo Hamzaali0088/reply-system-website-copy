@@ -69,18 +69,18 @@ const contact = () => {
 
     return (
         <div className='bg-white min-h-screen'>
-            <div className='bg-gradient-to-br to-[#7ED957]/20 via-white from-white min-h-[60vh]'>
+            <div className='bg-gradient-to-br to-primary/20 via-white from-white min-h-[60vh]'>
                 <div className='max-w-7xl mx-auto flex flex-col justify-between items-center gap-28'>
                     <div className='flex flex-col gap-4 mt-32 py-20'>
                         <h2 className='text-4xl  lg:text-5xl font-bold text-center'>Contact Us</h2>
-                        <p className=' text-center max-w-2xl text-[#05444B]'>We're here to help you with any questions or concerns you may have. Please fill out the form below and we'll get back to you as soon as possible.</p>
+                        <p className=' text-center max-w-2xl text-secondary'>We're here to help you with any questions or concerns you may have. Please fill out the form below and we'll get back to you as soon as possible.</p>
                     </div>
                 </div>
             </div>
             <div className='max-w-7xl mx-auto flex flex-col justify-between items-center gap-28 mt-20'>
                 <div className='w-full h-full min-h-[500px] mt-[-200px]'>
                     <div className='bg-white shadow-lg flex flex-col gap-10 max-w-5xl mx-auto p-16 border-2 border-gray-200 rounded-lg'>
-                        <p className='text-center max-w-2xl mx-auto text-[#05444B]/60'>have a question or feedback?Fill out the form below and we'll get back to you as soon as possible.</p>
+                        <p className='text-center max-w-2xl mx-auto text-secondary/60'>have a question or feedback?Fill out the form below and we'll get back to you as soon as possible.</p>
                         <div className='flex gap-10'>
                             <input type='text' placeholder='Full Name' className='border border-gray-200 p-3 rounded-sm w-full focus:outline-none focus:ring-2 focus:ring-green-500' />
                             <input type='text' placeholder='Company Name' className='border border-gray-200 p-3 rounded-sm w-full focus:outline-none focus:ring-2 focus:ring-green-500' />
@@ -91,7 +91,7 @@ const contact = () => {
                         </select>
                         <input type="text container" placeholder="message" className='border border-gray-200 p-3 rounded-sm w-full focus:outline-none focus:ring-2 focus:ring-green-500' />
                         <div className='flex justify-center'>
-                            <button className="bg-[#7ED957] text-[#05444B] font-semibold px-16 py-3 rounded-sm hover:bg-[#6bc24b] transition-colors">Submit</button>
+                            <button className="bg-primary text-secondary font-semibold px-16 py-3 rounded-sm hover:bg-primary-hover transition-colors">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -105,17 +105,17 @@ const contact = () => {
                     {contactCards.map((card) => {
                         const IconComponent = card.icon
                         return (
-                            <div key={card.id} className='bg-[#97EA5B] rounded-lg p-6 group hover:scale-105 transition-all duration-600 flex items-center justify-between hover:shadow-lg'>
+                            <div key={card.id} className='bg-primary-alt rounded-lg p-6 group hover:scale-105 transition-all duration-600 flex items-center justify-between hover:shadow-lg'>
                                 <div className='flex items-center gap-4'>
                                     <div className='bg-white rounded-lg p-6'>
-                                        <IconComponent className='w-6 h-6 text-[#05444B]' />
+                                        <IconComponent className='w-6 h-6 text-secondary' />
                                     </div>
                                     <div>
                                         <h3 className='font-bold text-black text-lg'>{card.title}</h3>
                                         <p className='text-black/70'>{card.description}</p>
                                     </div>
                                 </div>
-                                <button className='text-[#05444B] font-medium text-sm group-hover:translate-x-1 transition-all duration-300'>
+                                                                        <button className='text-secondary font-medium text-sm group-hover:translate-x-1 transition-all duration-300'>
                                     {card.buttonText}
                                 </button>
                             </div>
@@ -135,12 +135,12 @@ const contact = () => {
                                 onClick={() => toggleFaq(faq.id)}
                                 className='w-full flex items-center justify-between py-6 text-left transition-all duration-300 ease-in-out group'
                             >
-                                <h3 className={`text-lg transition-all duration-300 ease-in-out ${openFaq === faq.id ? 'font-bold text-[#05444B]' : 'font-normal text-black group-hover:text-[#05444B]'}`}>
+                                <h3 className={`text-lg transition-all duration-300 ease-in-out ${openFaq === faq.id ? 'font-bold text-secondary' : 'font-normal text-black group-hover:text-secondary'}`}>
                                     {faq.question}
                                 </h3>
                                 <div className='ml-4 flex-shrink-0'>
                                     <div className={`transition-all duration-300 ease-in-out transform ${openFaq === faq.id ? 'rotate-45' : 'rotate-0'}`}>
-                                        <Plus className={`w-5 h-5 transition-all duration-300 ease-in-out ${openFaq === faq.id ? 'text-[#05444B]' : 'text-black group-hover:text-[#05444B]'}`} />
+                                        <Plus className={`w-5 h-5 transition-all duration-300 ease-in-out ${openFaq === faq.id ? 'text-secondary' : 'text-black group-hover:text-secondary'}`} />
                                     </div>
                                 </div>
                             </button>

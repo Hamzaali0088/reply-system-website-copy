@@ -54,13 +54,13 @@ export default function Careers() {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#05444B] mb-4">
-            We have job openings <span className="text-[#7ED957]">worldwide</span>
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-secondary mb-4">
+          We have job openings <span className="text-primary">worldwide</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
             Explore upcoming events to connect, learn, and share with other Reply System customers.
           </p>
-          <button className="bg-[#7ED957] text-[#05444B] font-semibold px-8 py-3 rounded-lg hover:bg-[#6bc24b] transition-colors text-lg shadow-lg hover:shadow-xl">
+                      <button className="bg-primary text-secondary font-semibold px-8 py-3 rounded-lg hover:bg-primary-hover transition-colors text-lg shadow-lg hover:shadow-xl">
             Explore all roles
           </button>
         </div>
@@ -87,7 +87,7 @@ export default function Careers() {
                       />
                     </div>
                     <div className="p-4">
-                      <h3 className="text-xl font-bold text-[#05444B]">{office.name}</h3>
+                      <h3 className="text-xl font-bold text-secondary">{office.name}</h3>
                       <p className="text-gray-600 text-sm mt-1">{office.description}</p>
                     </div>
                   </div>
@@ -100,7 +100,7 @@ export default function Careers() {
           <div className="flex justify-center mt-8 gap-4">
             <button
               onClick={prevSlide}
-              className="w-12 h-12 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-[#7ED957] hover:bg-[#7ED957] hover:text-white transition-all duration-300 transform hover:scale-110"
+              className="w-12 h-12 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-110"
               aria-label="Previous slide"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ export default function Careers() {
             </button>
             <button
               onClick={nextSlide}
-              className="w-12 h-12 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-[#7ED957] hover:bg-[#7ED957] hover:text-white transition-all duration-300 transform hover:scale-110"
+              className="w-12 h-12 bg-white border-2 border-gray-300 rounded-full flex items-center justify-center hover:border-primary hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-110"
               aria-label="Next slide"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

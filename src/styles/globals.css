@@ -1,6 +1,52 @@
 @import "tailwindcss";
 
 /* Custom animations */
+
+@theme {
+  /* Primary Colors - Green Family */
+  --color-primary: #7ED957;
+  --color-primary-hover: #6bc24b;
+  --color-primary-light: #A7E770;
+  --color-primary-lighter: #b6f1a2;
+  --color-primary-lightest: #D9F9C7;
+  --color-primary-alt: #97EA5B;
+  
+  /* Secondary Colors - Teal/Blue Family */
+  --color-secondary: #05444B;
+  --color-secondary-dark: #073C43;
+  --color-secondary-darker: #0B3C3B;
+  --color-secondary-darkest: #0B6A6A;
+  --color-secondary-footer: #0B4740;
+  --color-secondary-footer-border: #1B6A5B;
+  
+  /* Tertiary Colors - Text Colors */
+  --color-text-primary: #232B3A;
+  --color-text-secondary: #3A4657;
+  --color-text-muted: #B6D0C6;
+  
+  /* Background Colors */
+  --color-bg-light: #F7F6F6;
+  --color-bg-lighter: #F7F8FA;
+  --color-bg-lightest: #F0F0F0;
+  --color-bg-white: #FFFFFF;
+  --color-bg-gray: #F5F5F5;
+  
+  /* Accent Colors */
+  --color-accent-blue: #1D8DF1;
+  --color-accent-yellow: #FFD600;
+  --color-accent-orange: #FFEFE6;
+  --color-accent-dark: #11332B;
+  --color-accent-dark-hover: #0d241e;
+  
+  /* Utility Colors */
+  --color-border: #e5e5e5;
+  --color-border-light: #E5E5E5;
+  --color-shadow: #000000;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+}
+
+
 @keyframes slide-in {
   from {
     opacity: 0;
@@ -20,6 +66,8 @@
     opacity: 1;
   }
 }
+
+
 
 .animate-slide-in {
   animation: slide-in 0.3s ease-out forwards;

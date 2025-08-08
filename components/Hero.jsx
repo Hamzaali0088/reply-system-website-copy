@@ -45,12 +45,12 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center min-h-[80vh] bg-gradient-to-b from-[#05444B] to-[#073C43] pt-32 pb-8 px-4">
+      <section className="relative flex flex-col items-center justify-center min-h-[80vh] bg-gradient-to-b from-secondary to-secondary-dark pt-32 pb-8 px-4">
         {/* Main content */}
         <div className="flex flex-col items-center z-10">
           {/* Headline */}
           <h1 className="text-center font-bold text-4xl md:text-5xl flex flex-wrap justify-center leading-tight mb-4">
-            <span className="text-[#7ED957] mr-2 mb-2 md:mb-0">
+            <span className="text-primary mr-2 mb-2 md:mb-0">
               The Support Platform
             </span>
             <span className="text-white">That Builds Itself Around You</span>
@@ -77,7 +77,7 @@ export default function Hero() {
                 autoComplete="off"
               />
               <button 
-                className="bg-[#7ED957] text-[#05444B] font-bold px-6 py-3 text-base flex items-center gap-2 hover:bg-[#6bc24b] transition-colors rounded-r-lg"
+                className="bg-primary text-secondary font-bold px-6 py-3 text-base flex items-center gap-2 hover:bg-primary-hover transition-colors rounded-r-lg"
                 onClick={() => handleSearch(searchQuery)}
                 type="button"
               >
@@ -122,7 +122,7 @@ export default function Hero() {
               {[...Array(5)].map((_, i) => (
                 <svg
                   key={i}
-                  className="w-4 h-4 text-[#7ED957]"
+                  className="w-4 h-4 text-primary"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >

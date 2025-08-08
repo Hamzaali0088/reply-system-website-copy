@@ -39,7 +39,7 @@ const testimonials = [
 ];
 
 const Star = () => (
-  <svg className="w-5 h-5 text-[#FFD600] inline-block" fill="currentColor" viewBox="0 0 20 20"><polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" /></svg>
+          <svg className="w-5 h-5 text-accent-yellow inline-block" fill="currentColor" viewBox="0 0 20 20"><polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" /></svg>
 );
 
 export default function Testimonial() {
@@ -56,8 +56,8 @@ export default function Testimonial() {
 
   return (
     <div className="bg-white py-20 px-4 flex flex-col items-center">
-      <h2 className="text-4xl md:text-5xl font-bold text-center text-[#232B3A] mb-2">Testimonal</h2>
-      <p className="text-center text-[#1D8DF1] text-lg mb-12">See what our happy Clients are sharing about us!</p>
+      <h2 className="text-4xl md:text-5xl font-bold text-center text-text-primary mb-2">Testimonal</h2>
+      <p className="text-center text-accent-blue text-lg mb-12">See what our happy Clients are sharing about us!</p>
       <div className="w-full max-w-6xl mx-auto flex items-center justify-center relative">
         {hasMoreThanFour && (
           <button
@@ -75,19 +75,19 @@ export default function Testimonial() {
             {testimonials.slice(currentIndex, currentIndex + 4).map((t, idx) => (
               <div 
                 key={`${currentIndex}-${idx}`} 
-                className="bg-[#F7F6F6] rounded-2xl p-8 flex flex-col justify-between h-full min-h-[260px] shadow-sm transition-all duration-500 ease-in-out transform"
+                className="bg-bg-light rounded-2xl p-8 flex flex-col justify-between h-full min-h-[260px] shadow-sm transition-all duration-500 ease-in-out transform"
                 style={{
                   animation: 'slideIn 0.5s ease-out'
                 }}
               >
-                <div className="text-[#232B3A] text-base mb-8 break-words">"{t.text}"</div>
+                <div className="text-text-primary text-base mb-8 break-words">"{t.text}"</div>
                 <div className="flex items-center gap-3 mt-auto">
                   <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover border-2 border-white shadow" />
                   <div className="flex items-center gap-1">
                     {[...Array(5)].map((_, i) => <Star key={i} />)}
                   </div>
                 </div>
-                <div className="text-[#232B3A] font-semibold text-sm mt-2 ml-12">{t.name}</div>
+                <div className="text-text-primary font-semibold text-sm mt-2 ml-12">{t.name}</div>
               </div>
             ))}
           </div>
@@ -97,19 +97,19 @@ export default function Testimonial() {
         <div className="w-full flex md:hidden justify-center">
           <div className="flex flex-col items-center w-full">
             <div 
-              className="bg-[#F7F6F6] rounded-2xl p-8 flex flex-col justify-between h-full shadow-sm flex-shrink-0 min-w-[260px] max-w-xs mx-auto transition-all duration-500 ease-in-out transform"
+              className="bg-bg-light rounded-2xl p-8 flex flex-col justify-between h-full shadow-sm flex-shrink-0 min-w-[260px] max-w-xs mx-auto transition-all duration-500 ease-in-out transform"
               style={{
                 animation: 'slideIn 0.5s ease-out'
               }}
             >
-              <div className="text-[#232B3A] text-base mb-8 break-words">"{testimonials[currentIndex].text}"</div>
+              <div className="text-text-primary text-base mb-8 break-words">"{testimonials[currentIndex].text}"</div>
               <div className="flex items-center gap-3 mt-auto">
                 <img src={testimonials[currentIndex].avatar} alt={testimonials[currentIndex].name} className="w-10 h-10 rounded-full object-cover border-2 border-white shadow" />
                 <div className="flex items-center gap-1">
                   {[...Array(5)].map((_, i) => <Star key={i} />)}
                 </div>
               </div>
-              <div className="text-[#232B3A] font-semibold text-sm mt-2 ml-12">{testimonials[currentIndex].name}</div>
+              <div className="text-text-primary font-semibold text-sm mt-2 ml-12">{testimonials[currentIndex].name}</div>
             </div>
           </div>
         </div>

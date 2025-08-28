@@ -4,6 +4,7 @@ import Image from "next/image";
 export default function Hero() {
   const [searchQuery, setSearchQuery] = useState("");
   const [showSuggestions, setShowSuggestions] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [suggestions] = useState([
     "Customer Support",
     "Help Desk",
@@ -45,9 +46,11 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center min-h-[60vh]  pt-20 pb-8 px-4 background-img">
+      <section className="relative flex flex-col items-center justify-center min-h-[60vh] geometric-bg pt-20 pb-8 px-4 overflow-hidden">
+
+        
         {/* Main content */}
-        <div className="flex flex-col items-center z-10">
+        <div className="flex flex-col items-center z-10 relative">
           {/* Headline */}
           <h1 className="text-center font-bold text-4xl md:text-5xl flex flex-wrap justify-center leading-tight mb-4">
             <span className="text-primary mr-2 mb-2 md:mb-0">
@@ -115,7 +118,7 @@ export default function Hero() {
             </div>
           </div>
           {/* Trustpilot row */}
-          <div className="flex items-center gap-2 mt-8 text-gray-200 text-sm font-medium">
+          <div className="flex items-center gap-2 my-8 text-gray-200 text-sm font-medium">
             Excellent
             <span className="flex items-center ml-1">
               {/* 5 green stars */}

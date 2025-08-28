@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "Solution", href: "/solution" },
@@ -10,10 +11,22 @@ export default function Navbar() {
     { name: "Contact us", href: "/contact" },
     { name: "Pricing", href: "/pricing" }
   ];
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   
   return (
     <>
-      <nav className="fixed left-1/2 top-4 md:top-8 -translate-x-1/2 z-50 bg-secondary rounded-2xl shadow-xl max-w-7xl w-[95vw] md:w-[90vw] px-4 md:px-10 py-3 md:py-5 flex flex-col gap-2">
+      <nav className={`fixed left-1/2 ${isScrolled ? 'top-3' : 'top-6 md:top-8'} -translate-x-1/2 z-50 bg-secondary rounded-2xl shadow-xl max-w-7xl w-[95vw] md:w-[90vw] px-4 md:px-10 py-3 md:py-5 flex flex-col gap-2 transition-all duration-500 ease-in-out`}>
         {/* Main navbar */}
         <div className="flex items-center justify-between w-full">
           {/* Logo and brand */}

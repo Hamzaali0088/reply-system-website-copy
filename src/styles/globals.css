@@ -68,6 +68,81 @@
   }
 }
 
+/* Geometric Rectangle Background Animations */
+@keyframes geometricFloat1 {
+  0%, 100% {
+    transform: translateX(-10%) translateY(-5%) rotate(15deg);
+  }
+  25% {
+    transform: translateX(5%) translateY(-15%) rotate(25deg);
+  }
+  50% {
+    transform: translateX(15%) translateY(-8%) rotate(35deg);
+  }
+  75% {
+    transform: translateX(-5%) translateY(-12%) rotate(20deg);
+  }
+}
+
+@keyframes geometricFloat2 {
+  0%, 100% {
+    transform: translateX(10%) translateY(5%) rotate(-20deg);
+  }
+  25% {
+    transform: translateX(-5%) translateY(15%) rotate(-30deg);
+  }
+  50% {
+    transform: translateX(-15%) translateY(8%) rotate(-40deg);
+  }
+  75% {
+    transform: translateX(5%) translateY(12%) rotate(-25deg);
+  }
+}
+
+@keyframes geometricFloat3 {
+  0%, 100% {
+    transform: translateX(20%) translateY(-10%) rotate(45deg);
+  }
+  33% {
+    transform: translateX(-10%) translateY(-20%) rotate(55deg);
+  }
+  66% {
+    transform: translateX(30%) translateY(-5%) rotate(65deg);
+  }
+}
+
+@keyframes geometricFloat4 {
+  0%, 100% {
+    transform: translateX(-20%) translateY(10%) rotate(-45deg);
+  }
+  33% {
+    transform: translateX(10%) translateY(20%) rotate(-55deg);
+  }
+  66% {
+    transform: translateX(-30%) translateY(5%) rotate(-65deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.3;
+    filter: blur(0px);
+  }
+  50% {
+    opacity: 0.6;
+    filter: blur(1px);
+  }
+}
+
+@keyframes slowRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 
 .animate-slide-in {
@@ -76,6 +151,121 @@
 
 .animate-fade-in {
   animation: fade-in 0.2s ease-out forwards;
+}
+
+/* Geometric animated background classes */
+.animate-geometric-1 {
+  animation: geometricFloat1 15s ease-in-out infinite;
+}
+
+.animate-geometric-2 {
+  animation: geometricFloat2 18s ease-in-out infinite 2s;
+}
+
+.animate-geometric-3 {
+  animation: geometricFloat3 12s ease-in-out infinite 4s;
+}
+
+.animate-geometric-4 {
+  animation: geometricFloat4 20s ease-in-out infinite 1s;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.animate-slow-rotate {
+  animation: slowRotate 60s linear infinite;
+}
+
+/* Geometric Background using CSS only */
+.geometric-bg {
+  background: 
+    /* Layer 1 - Dark geometric shapes with increased opacity */
+    linear-gradient(125deg, transparent 25%, rgba(26, 26, 26, 0.24) 25%, rgba(26, 26, 26, 0.24) 35%, transparent 35%),
+    linear-gradient(-55deg, transparent 40%, rgba(45, 45, 45, 0.18) 40%, rgba(45, 45, 45, 0.18) 50%, transparent 50%),
+    linear-gradient(35deg, transparent 60%, rgba(26, 26, 26, 0.22) 60%, rgba(26, 26, 26, 0.22) 70%, transparent 70%),
+    
+    /* Layer 2 - Golden accent lines with increased opacity */
+    linear-gradient(75deg, transparent 15%, rgba(255, 189, 13, 0.04) 15%, rgba(255, 189, 13, 0.1) 16%, rgba(255, 189, 13, 0.04) 17%, transparent 17%),
+    linear-gradient(-25deg, transparent 80%, rgba(255, 189, 13, 0.06) 80%, rgba(255, 189, 13, 0.14) 81%, rgba(255, 189, 13, 0.06) 82%, transparent 82%),
+    linear-gradient(135deg, transparent 45%, rgba(255, 189, 13, 0.05) 45%, rgba(255, 189, 13, 0.12) 46%, rgba(255, 189, 13, 0.05) 47%, transparent 47%),
+    
+    /* Layer 3 - Additional geometric shapes with increased opacity */
+    linear-gradient(-65deg, transparent 20%, rgba(15, 15, 15, 0.3) 20%, rgba(15, 15, 15, 0.3) 30%, transparent 30%),
+    linear-gradient(165deg, transparent 75%, rgba(38, 38, 38, 0.24) 75%, rgba(38, 38, 38, 0.24) 85%, transparent 85%),
+    
+    /* Base black background */
+    #000000;
+    
+  background-size: 
+    800px 600px,
+    700px 500px, 
+    900px 700px,
+    600px 400px,
+    750px 550px,
+    650px 450px,
+    850px 650px,
+    950px 750px;
+    
+  background-position:
+    -200px -100px,
+    200px 50px,
+    -100px 150px,
+    300px -50px,
+    -150px 100px,
+    400px 200px,
+    100px -200px,
+    -300px 250px;
+    
+  animation: geometricMove 25s ease-in-out infinite;
+}
+
+@keyframes geometricMove {
+  0%, 100% {
+    background-position:
+      -200px -100px,
+      200px 50px,
+      -100px 150px,
+      300px -50px,
+      -150px 100px,
+      400px 200px,
+      100px -200px,
+      -300px 250px;
+  }
+  25% {
+    background-position:
+      -150px -120px,
+      250px 30px,
+      -80px 170px,
+      320px -70px,
+      -130px 120px,
+      420px 180px,
+      120px -220px,
+      -280px 270px;
+  }
+  50% {
+    background-position:
+      -180px -80px,
+      220px 70px,
+      -120px 130px,
+      280px -30px,
+      -170px 80px,
+      380px 220px,
+      80px -180px,
+      -320px 230px;
+  }
+  75% {
+    background-position:
+      -220px -110px,
+      180px 40px,
+      -60px 160px,
+      340px -60px,
+      -110px 110px,
+      440px 190px,
+      140px -210px,
+      -260px 260px;
+  }
 }
 
   .logo-primary-filter {

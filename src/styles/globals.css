@@ -81,4 +81,9 @@
   .logo-primary-filter {
     filter: hue-rotate(-60deg) saturate(1.8) brightness(1.2) sepia(0.3);
   }
-
+.background-img {
+    background-image: url('/img/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

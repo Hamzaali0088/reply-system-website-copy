@@ -45,7 +45,7 @@ export default function Hero() {
 
   return (
     <>
-      <section className="relative flex flex-col items-center justify-center min-h-[60vh] bg-secondary  pt-20 pb-8 px-4">
+      <section className="relative flex flex-col items-center justify-center min-h-[60vh]  pt-20 pb-8 px-4 background-img">
         {/* Main content */}
         <div className="flex flex-col items-center z-10">
           {/* Headline */}

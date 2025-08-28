@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutHero() {
   return (
-    <section className="pt-36 lg:pt-52 pb-16 bg-white relative overflow-hidden mx-3">
+    <section className="pt-36 lg:pt-52 pb-16 bg-white relative overflow-hidden">
       {/* Curved gradient overlay */}
       <div className="absolute inset-0 bg-gradient-radial from-primary via-transparent to-transparent" 
            style={{

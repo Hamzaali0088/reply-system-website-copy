@@ -5,9 +5,9 @@ export default function AboutHero() {
   return (
     <section className="pt-36 lg:pt-52 pb-16 bg-white relative overflow-hidden mx-3">
       {/* Curved gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-radial from-green-100 via-transparent to-transparent" 
+      <div className="absolute inset-0 bg-gradient-radial from-primary via-transparent to-transparent" 
            style={{
-             background: 'radial-gradient(ellipse at bottom right, rgba(134, 239, 172, 0.3) 0%, rgba(134, 239, 172, 0.1) 40%, transparent 70%)'
+             background: 'radial-gradient(ellipse at bottom right, rgba(255, 189, 13, 0.3) 0%, rgba(255, 189, 13, 0.1) 40%, transparent 70%)'
            }}>
       </div>
       

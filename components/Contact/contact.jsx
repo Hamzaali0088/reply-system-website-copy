@@ -115,7 +115,7 @@ const contact = () => {
                                         <p className='text-black/70'>{card.description}</p>
                                     </div>
                                 </div>
-                                                                        <button className='text-secondary font-medium text-sm group-hover:translate-x-1 transition-all duration-300'>
+                                <button className='text-secondary font-medium text-sm group-hover:translate-x-1 transition-all duration-300'>
                                     {card.buttonText}
                                 </button>
                             </div>
@@ -127,7 +127,7 @@ const contact = () => {
             {/* FAQ Section */}
             <div className='max-w-7xl mx-auto px-4 py-20'>
                 <h2 className='text-4xl lg:text-5xl font-bold text-center text-black mb-16'>Frequently asked questions:</h2>
-                
+
                 <div className='bg-gray-100 rounded-lg p-8 shadow-lg min-h-[600px] max-w-5xl mx-auto'>
                     {faqData.map((faq) => (
                         <div key={faq.id} className='border-b border-gray-200 last:border-b-0 overflow-hidden'>

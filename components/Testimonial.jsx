@@ -39,7 +39,7 @@ const testimonials = [
 ];
 
 const Star = () => (
-          <svg className="w-5 h-5 text-accent-yellow inline-block" fill="currentColor" viewBox="0 0 20 20"><polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" /></svg>
+          <svg className="w-5 h-5 text-primary inline-block" fill="currentColor" viewBox="0 0 20 20"><polygon points="10,1 12.59,7.36 19.51,7.64 14,12.14 15.82,19.02 10,15.27 4.18,19.02 6,12.14 0.49,7.64 7.41,7.36" /></svg>
 );
 
 export default function Testimonial() {
@@ -84,7 +84,7 @@ export default function Testimonial() {
                 <div className="flex items-center gap-3 mt-auto">
                   <img src={t.avatar} alt={t.name} className="w-10 h-10 rounded-full object-cover border-2 border-white shadow" />
                   <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => <Star key={i} />)}
+                    {[...Array(5)].map((_, i) => <Star key={i} text="text-primary" />)}
                   </div>
                 </div>
                 <div className="text-text-primary font-semibold text-sm mt-2 ml-12">{t.name}</div>

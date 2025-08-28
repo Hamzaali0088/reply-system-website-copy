@@ -1,11 +1,11 @@
 import React from 'react';
 
 const logos = [
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Alex_and_Ani_logo.png', alt: 'Alex and Ani' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Petco_logo.svg', alt: 'Petco' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Hormel_Foods_Corporation_Logo.png', alt: 'Hormel' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Dean_Foods_logo.svg', alt: 'Dean' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Meijer_logo.svg', alt: 'Meijer' },
+  { src: '/img/helpsupport/1.png', alt: 'Alex and Ani' },
+  { src: '/img/helpsupport/2.png', alt: 'Petco' },
+  { src: '/img/helpsupport/3.png', alt: 'Hormel' },
+  { src: '/img/helpsupport/4.png', alt: 'Dean' },
+  { src: '/img/helpsupport/5.png', alt: 'Meijer' },
 ];
 
 export default function HelpSupport() {
@@ -15,11 +15,11 @@ export default function HelpSupport() {
         {/* Left: Form */}
         <div className="flex-1 w-full max-w-lg md:pl-2">
           <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-1 leading-tight">Help support</h2>
-                      <p className="text-accent-blue text-base md:text-lg mb-8 mt-1">Please fill these fields for support ticket</p>
+          <p className="text-accent-blue text-base md:text-lg mb-8 mt-1">Please fill these fields for support ticket</p>
           <form className="flex flex-col gap-5 w-full max-w-[430px]">
-                          <input type="text" placeholder="Full Name *" className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent-blue text-base w-full" />
-                          <input type="text" placeholder="Company name" className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent-blue text-base w-full" />
-                          <select className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent-blue text-base text-gray-500 w-full">
+            <input type="text" placeholder="Full Name *" className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent-blue text-base w-full" />
+            <input type="text" placeholder="Company name" className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent-blue text-base w-full" />
+            <select className="border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-accent-blue text-base text-gray-500 w-full">
               <option>Your Support Challenges (optional)</option>
               <option>Technical Issue</option>
               <option>Billing</option>
@@ -28,7 +28,7 @@ export default function HelpSupport() {
             </select>
             <button type="submit" className="bg-accent-dark text-white font-semibold rounded-md px-8 py-3 mt-2 shadow-md hover:bg-accent-dark-hover transition  text-lg">Submit</button>
           </form>
-                      <p className="text-xs text-text-primary mt-3 font-semibold text-left max-w-[430px]">
+          <p className="text-xs text-text-primary mt-3 font-semibold text-left max-w-[430px]">
             <span className="font-bold">Note:</span> <span className="font-normal">After you submit, our team will personally reach out to discuss your ideal setup.</span>
           </p>
         </div>
@@ -46,10 +46,10 @@ export default function HelpSupport() {
       </div>
       {/* Logos row */}
       <div className="w-full flex flex-col items-center mt-8 md:mt-16 mb-0">
-        <div className="bg-bg-light rounded-lg py-4 px-2 md:py-5 md:px-8 flex flex-wrap justify-center items-center gap-4 md:gap-10 w-full max-w-4xl mx-auto">
+        <div className="bg-bg-light py-4 px-2 md:py-5 md:px-8 grid grid-cols-5 justify-center bg-gray-100 items-center gap-4 md:gap-6 w-full max-w-6xl">
           {logos.map((logo, idx) => (
-            <div key={idx} className="flex items-center justify-center min-w-[80px] w-1/2 sm:w-auto">
-              <img src={logo.src} alt={logo.alt} className="h-7 object-contain grayscale mx-auto max-w-[100px] w-full" />
+            <div key={idx} className="flex items-center justify-center w-full sm:w-auto h-full max-h-[90px]">
+              <img src={logo.src} alt={logo.alt} width={150} height={100} className=" object-contain grayscale mx-auto" />
             </div>
           ))}
         </div>

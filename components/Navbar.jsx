@@ -18,12 +18,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between w-full">
           {/* Logo and brand */}
           <div className="flex items-center gap-2 md:gap-3">
-            <Image
+             <Image
               src="/img/logo.png"
               alt="Logo"
-              width={150}
-              height={150}
-              className=" h-5 w-auto md:h-7"
+              width={300}
+              height={300}
+              className="h-5 w-auto md:h-7 logo-primary-filter"
             />
           </div>
           

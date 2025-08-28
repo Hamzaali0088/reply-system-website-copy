@@ -120,7 +120,7 @@ export default function TicketingTool() {
 
         {/* Bottom CTA Section */}
         <div className="text-center mt-16">
-          <button className="bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-8 rounded-lg transition duration-300 text-lg">
+          <button className="bg-primary hover:bg-primary-hover text-white font-semibold py-4 px-8 rounded-lg transition duration-300 text-lg">
             Try it free for 14 days
           </button>
           <p className="text-gray-500 mt-4 text-sm">

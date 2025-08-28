@@ -131,14 +131,14 @@ export default function PricingTable() {
               {/* Most Popular Badge */}
               {plan.isPopular && (
                 <div className="absolute top-0 left-0 w-full flex justify-center">
-                  <span className="bg-[#05444B] text-white px-4 py-1 rounded-b-lg text-xs font-bold tracking-widest">MOST POPULAR</span>
+                  <span className="bg-secondary text-white px-4 py-1 rounded-b-lg text-xs font-bold tracking-widest">MOST POPULAR</span>
                 </div>
               )}
               <div className="mb-6">
-                <h3 className="text-xl font-bold text-[#05444B] mb-1">{plan.name}</h3>
+                  <h3 className="text-xl font-bold text-secondary mb-1">{plan.name}</h3>
                 <p className="text-sm text-gray-700 mb-4 min-h-[48px]">{plan.description}</p>
                 <div className="flex items-end gap-2 mb-4">
-                  <span className="text-3xl font-bold text-[#05444B]">${plan.price[billing]}</span>
+                  <span className="text-3xl font-bold text-secondary">${plan.price[billing]}</span>
                   <span className="text-xs text-gray-700">{plan.isEnterprise ? "" : "per agent/month billed monthly"}</span>
                 </div>
                 <button className={`w-full py-2 rounded font-semibold transition-colors mb-4 ${plan.ctaStyle}`}>{plan.cta}</button>
@@ -147,11 +147,11 @@ export default function PricingTable() {
                 {plan.features.map((feature, i) => (
                   typeof feature === "string" ? (
                     <li key={i} className="flex items-center gap-2">
-                      <span className="text-[#7ED957] text-lg">✓</span> {feature}
+                      <span className="text-primary text-lg">✓</span> {feature}
                     </li>
                   ) : (
                     <li key={i} className="flex items-center gap-2">
-                      <span className="text-[#7ED957] text-lg">✓</span> {feature.text} {feature.badge && <span className="ml-2 bg-[#7ED957] text-[#05444B] px-2 py-0.5 rounded text-xs font-bold">{feature.badge}</span>}
+                      <span className="text-primary text-lg">✓</span> {feature.text} {feature.badge && <span className="ml-2 bg-primary text-secondary px-2 py-0.5 rounded text-xs font-bold">{feature.badge}</span>}
                     </li>
                   )
                 ))}
@@ -164,7 +164,7 @@ export default function PricingTable() {
         </div>
         {/* See all features button */}
         <div className="flex justify-center mt-8">
-          <button className="bg-[#7ED957] text-[#05444B] px-6 py-2 rounded-full font-semibold hover:bg-[#6bc24b] transition-colors text-sm">See all features</button>
+          <button className="bg-primary  text-secondary px-6 py-2 rounded-full font-semibold hover:bg-primary-hover transition-colors text-sm">See all features</button>
         </div>
         {/* Footnotes */}
         <div className="text-xs text-gray-700 mt-4 flex flex-col gap-1">

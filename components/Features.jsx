@@ -9,46 +9,46 @@ const CheckIcon = () => (
 const PieChartSVG = () => (
   <svg viewBox="0 0 120 120" className="w-full h-48 object-contain mt-6">
     <circle cx="60" cy="60" r="50" fill="#F7F8FA" />
-    <path d="M60 60 L60 10 A50 50 0 0 1 110 60 Z" fill="#7ED957" />
-    <path d="M60 60 L110 60 A50 50 0 0 1 60 110 Z" fill="#0B3C3B" />
+    <path d="M60 60 L60 10 A50 50 0 0 1 110 60 Z" fill="var(--color-primary)" />
+    <path d="M60 60 L110 60 A50 50 0 0 1 60 110 Z" fill="var(--color-secondary)" />
     <path d="M60 60 L60 110 A50 50 0 0 1 10 60 Z" fill="#FFEFE6" />
-    <path d="M60 60 L10 60 A50 50 0 0 1 60 10 Z" fill="#232B3A" />
+    <path d="M60 60 L10 60 A50 50 0 0 1 60 10 Z" fill="#var(--color-secondary)" />
   </svg>
 );
 
 const BarChartSVG = () => (
   <svg viewBox="0 0 120 80" className="w-full h-48 object-contain mt-6">
-    <rect x="15" y="40" width="10" height="30" fill="#7ED957" />
-    <rect x="35" y="20" width="10" height="50" fill="#0B3C3B" />
-    <rect x="55" y="30" width="10" height="40" fill="#7ED957" />
-    <rect x="75" y="10" width="10" height="60" fill="#0B3C3B" />
-    <rect x="95" y="25" width="10" height="45" fill="#7ED957" />
+    <rect x="15" y="40" width="10" height="30" fill="var(--color-primary)" />
+    <rect x="35" y="20" width="10" height="50" fill="var(--color-secondary)" />
+    <rect x="55" y="30" width="10" height="40" fill="var(--color-primary)" />
+    <rect x="75" y="10" width="10" height="60" fill="var(--color-secondary)" />
+    <rect x="95" y="25" width="10" height="45" fill="var(--color-primary)" />
   </svg>
 );
 
 const cards = [
-  {
+  { 
     title: '100+ Project Support',
     subtitle: 'All support Apps',
     content: (
       <ul className="space-y-3 mt-6">
         <li className="flex items-center gap-3 text-base font-medium text-text-primary">
-          <img src="/img/app1.png" alt="App1" className="w-6 h-6" />
+          {/* <img src="/img/app1.png" alt="App1" className="w-6 h-6" /> */}
           <span>Testing near you</span>
           <CheckIcon />
         </li>
         <li className="flex items-center gap-3 text-base font-medium text-text-primary">
-          <img src="/img/app2.png" alt="App2" className="w-6 h-6" />
+          {/* <img src="/img/app2.png" alt="App2" className="w-6 h-6" /> */}
           <span>LogicCRM</span>
           <CheckIcon />
         </li>
         <li className="flex items-center gap-3 text-base font-medium text-text-primary">
-          <img src="/img/app3.png" alt="App3" className="w-6 h-6" />
+          {/* <img src="/img/app3.png" alt="App3" className="w-6 h-6" /> */}
           <span>VattiTech</span>
           <CheckIcon />
         </li>
         <li className="flex items-center gap-3 text-base font-medium text-text-primary">
-          <img src="/img/app4.png" alt="App4" className="w-6 h-6" />
+          {/* <img src="/img/app4.png" alt="App4" className="w-6 h-6" /> */}
           <span>One4CRM</span>
           <CheckIcon />
         </li>
